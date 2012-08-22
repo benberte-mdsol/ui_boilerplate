@@ -1,44 +1,59 @@
-header {	
-	text-align: center;
+header {
+	height:64px;
 	width: 100%;
 	background: #eee;
+	padding: 8px;
 }
 
+header div.logo{
+	width: 225px;
+	height: 50px;
+	border: 2px solid #ccc;
+	background: #fff;
+	padding: 4px;
+}
 #checkmate-nav {
 	text-align: center;
 	width: 100%;
 	background: #999;
 	margin-bottom: 32px;
+	height: 24px;
 }
-#fatheader {
+.fatheader {
 	float: left;
 	display: inline;
 	border: 1px solid #ddd;
 	height: auto;
 }
-#fatheader div {
-	background: #f9f9f9;
+.fatheader div {
+	background: #fff;
 	float: left;
 	display: inline-block;
 	width: 115px;
 	border-right: 1px solid #ddd;
 	padding: 8px;
+	margin: 0;
 }
-#fatheader  div.selected {
+.fatheader  div.selected {
 	background: #ddd;
 
 }
-#fatheader div.last {
+.fatheader div.last {
 	border-right: none;
 }
 
-#filter {
+.filter-row {
 	float: left;
 	display: inline;
 	border:1px solid #ddd;
-	padding: 8px;
+	padding: 8px 0 8px 8px;
+	margin: 0;
 }
+thead {
+	background:#666;
+	color: #fff;
 
+}
 .table-bordered {
 -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
@@ -50,7 +65,7 @@ header {
           border-top-left-radius: 0px;
   -moz-border-radius-top-left: 0px;
 }
-.pink {
+.negative {
 background-color:#ffd9d9;
 }
 
@@ -59,4 +74,8 @@ span.percents {
 	width: 4em;
 	margin-right: 4px;
 	display: inline-block;
+}
+.center-buttons {
+	text-align: center;
+
 }
