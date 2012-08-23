@@ -4,34 +4,173 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<title>UI Prototype</title>
-	
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>UI Prototype</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
 
-	<!-- STYLESHEETS HERE -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/application.css">
+<!-- STYLESHEETS HERE -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/application.css">
 
-	<!-- NO OTHER JAVSCRIPT IN THE HEAD -->
-	<script src="js/modernizr.js"></script>
-
+<!-- NO OTHER JAVSCRIPT IN THE HEAD -->
+<script src="js/modernizr.js"></script>
 </head>
 <body>
 <!-- SITE CONTENT -->
-	
 
-<!-- END SITE CONTENT -->
+<header id="header">
+  <div class="logo"><h2>Stark Industries</h2></div>
+</header>
 
-<!-- ALL SITE JAVSCRIPT BELOW THIS LINE -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
+<nav id="checkmate-nav">Checkmate nav</nav>
+
+
+<div class="container">
+<h2>Users Assigned to StudyName1</h2>
+
+<!-- FAT HEADER -->
+<div class="container fatheader">
+    <div class=" span2 selected">
+      <a href="#">Roles</a>
+      <h2>12</h2>
+    </div>  
+
+    <div class="span2">
+      <a href="#">Total Accepted</a>
+      <h2>12</h2>
+    </div>
+
+    <div class="span2">
+      <a href="#">Not Accepted</a>
+      <h2>12</h2>
+    </div>
+
+    <div class="span2">
+      <a href="#">Total Sent</a>
+      <h2>12</h2>
+    </div>
+
+    <div class="span2">
+      <a href="#">Hard Bounce</a>
+      <h2>12</h2>
+    </div>
+
+    <div class="span2">
+      <a href="#">Passed eLearning</a>
+      <h2>12</h2>
+    </div>
+    <div class="span2 last">
+      <a href="#">Deactivated</a>
+      <h2>12</h2>
+    </div>
+
+ </div>
+
+<!-- <table class="table table-bordered">
+  <tr>
+  <td>Roles <br> <h2>12</h2></td>
+  <td>Total Accepted<br> <h2>65%</h2></td>
+  <td>Not Accepted<br> <h2>46</h2></td>
+  <td>Total Sent<br> <h2>130</h2></td>
+  <td>Hard Bounce<br> <h2>10</h2></td>
+  <td>Passed eLearning<br> <h2>67%</h2></td>
+  <td>Deactivated Users<br> <h2>0</h2></td>
+</tr>
+</table> -->
+
+<div class="filter-row span12">
+  <h4>Filter</h4>
+  <div class="input">
+        <select>
+            <option>Role</option>
+            <option>Site</option>
+            <option>Authorized by</option>
+            <option>Depot</option>
+            <option>Team</option>
+        </select>
+  </div>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Role</th>
+      <th>Sent</th>
+      <th>Total Accepted</th>
+      <th>Hard Bounce</th>
+      <th>Passed eLearning</th>
+      <th>Action Items</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="checkbox"/></td>
+      <td>Monitor 1</td>
+      <td>1 </td>
+      <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
+      <td>0</td>
+      <td>1  <span class="percents">100%</span> <img src="images/green_bar.png"></td>
+      <td><button class="btn primary">Primary</button></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" /></td>
+      <td>Monitor 2</td>
+      <td>1</td>
+      <td class="negative">0 <span class="percents">0%</span> <img src="images/white_bar.png"></td>
+      <td>0</td>
+      <td>0 <span class="percents">0%</span>  <img src="images/white_bar.png"></td>
+      <td><button class="btn primary">Primary</button></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td>Monitor 3</td>
+      <td>1 </td>
+      <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
+      <td>0</td>
+      <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
+      <td><button class="btn primary">Primary</button></td>
+    </tr>
+
+     <tr>
+      <td><input type="checkbox"/></td>  
+      <td>Monitor 4</td>
+      <td>1 </td>
+      <td class="negative">0 <span class="percents">0%</span>  <img src="images/white_bar.png"></td>
+      <td>0</td>
+      <td>0 <span class="percents">0%</span> <img src="images/white_bar.png"></td>
+      <td><button class="btn primary">Primary</button></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="center-buttons">
+      <td colspan="7">
+       <button class="btn primary">Primary</button>
+       <button class="btn primary">Primary</button>
+       <button class="btn primary">Primary</button>
+       <button class="btn primary">Primary</button> 
+     </td>
+    </tr>
+</tfoot>
+</table>
+
+
+
+</div>
+<!-- END SITE CONTENT --> 
+
+<!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.js"></script> 
 <script src="js/application.js"></script>
-
 </body>
 </html>
