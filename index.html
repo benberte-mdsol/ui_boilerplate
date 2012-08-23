@@ -25,7 +25,7 @@
 <!-- SITE CONTENT -->
 
 <header id="header">
-  <div class="logo"><h2>Stark Industries</h2></div>
+  <div class="logo"><h3>Stark Industries</h3></div>
 </header>
 
 <nav id="checkmate-nav">Checkmate nav</nav>
@@ -38,53 +38,41 @@
 <div class="container fatheader">
     <div class=" span2 selected">
       <a href="#">Roles</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>  
 
     <div class="span2">
       <a href="#">Total Accepted</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>
 
     <div class="span2">
       <a href="#">Not Accepted</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>
 
     <div class="span2">
       <a href="#">Total Sent</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>
 
     <div class="span2">
       <a href="#">Hard Bounce</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>
 
     <div class="span2">
       <a href="#">Passed eLearning</a>
-      <h2>12</h2>
+      <h3>12</h3>
     </div>
     <div class="span2 last">
-      <a href="#">Deactivated</a>
-      <h2>12</h2>
+      <a href="#">Deactivated Users</a>
+      <h3>12</h3>
     </div>
 
  </div>
 
-<!-- <table class="table table-bordered">
-  <tr>
-  <td>Roles <br> <h2>12</h2></td>
-  <td>Total Accepted<br> <h2>65%</h2></td>
-  <td>Not Accepted<br> <h2>46</h2></td>
-  <td>Total Sent<br> <h2>130</h2></td>
-  <td>Hard Bounce<br> <h2>10</h2></td>
-  <td>Passed eLearning<br> <h2>67%</h2></td>
-  <td>Deactivated Users<br> <h2>0</h2></td>
-</tr>
-</table> -->
-
-<div class="filter-row span12">
+<div class="filter-row">
   <h4>Filter</h4>
   <div class="input">
         <select>
@@ -118,7 +106,18 @@
       <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
       <td>0</td>
       <td>1  <span class="percents">100%</span> <img src="images/green_bar.png"></td>
-      <td><button class="btn primary">Primary</button></td>
+       <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
     <tr>
@@ -128,7 +127,18 @@
       <td class="negative">0 <span class="percents">0%</span> <img src="images/white_bar.png"></td>
       <td>0</td>
       <td>0 <span class="percents">0%</span>  <img src="images/white_bar.png"></td>
-      <td><button class="btn primary">Primary</button></td>
+       <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
     <tr>
@@ -138,7 +148,18 @@
       <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
       <td>0</td>
       <td>1 <span class="percents">100%</span> <img src="images/green_bar.png"></td>
-      <td><button class="btn primary">Primary</button></td>
+       <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
      <tr>
@@ -148,7 +169,18 @@
       <td class="negative">0 <span class="percents">0%</span>  <img src="images/white_bar.png"></td>
       <td>0</td>
       <td>0 <span class="percents">0%</span> <img src="images/white_bar.png"></td>
-      <td><button class="btn primary">Primary</button></td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
   </tbody>
   <tfoot>
@@ -162,10 +194,13 @@
     </tr>
 </tfoot>
 </table>
-
-
-
 </div>
+
+<footer>
+  
+
+
+</footer>
 <!-- END SITE CONTENT --> 
 
 <!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 

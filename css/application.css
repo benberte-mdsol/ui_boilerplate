@@ -1,3 +1,4 @@
+
 header {
 	height:64px;
 	width: 100%;
@@ -16,21 +17,20 @@ header div.logo{
 	text-align: center;
 	width: 100%;
 	background: #999;
-	margin-bottom: 32px;
+	margin-bottom: 24px;
 	height: 24px;
 }
 .fatheader {
-	float: left;
-	display: inline;
 	border: 1px solid #ddd;
+	width: 938px;
 	height: auto;
 }
 .fatheader div {
-	background: #fff;
+	background: #f6f6f6;
 	float: left;
 	display: inline-block;
-	width: 115px;
 	border-right: 1px solid #ddd;
+	width: 117px;
 	padding: 8px;
 	margin: 0;
 }
@@ -39,14 +39,15 @@ header div.logo{
 
 }
 .fatheader div.last {
-	border-right: none;
+	border-right: 1px solid #f6f6f6;
 }
 
 .filter-row {
 	float: left;
 	display: inline;
 	border:1px solid #ddd;
-	padding: 8px 0 8px 8px;
+	padding: 8px;
+	width: 922px;
 	margin: 0;
 }
 thead {
@@ -65,6 +66,12 @@ thead {
           border-top-left-radius: 0px;
   -moz-border-radius-top-left: 0px;
 }
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+}
 .negative {
 background-color:#ffd9d9;
 }
@@ -78,4 +85,96 @@ span.percents {
 .center-buttons {
 	text-align: center;
 
+}
+
+
+
+
+
+
+
+
+/* buttons */
+
+.btn {
+    padding: 2px 8px;
+}
+
+.btn .caret {
+    margin: 8px 0 0 4px;
+}
+
+.btn-group > .btn, .btn-group > .dropdown-menu {
+    font-size: 12px;
+}
+
+.btn-group > .dropdown-menu {
+    font-size: 12px;
+}
+
+.dropdown-menu {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #333;
+  text-decoration: none;
+  background-color: #e1edce;
+  background-color: #e1edce;
+  background-image: -moz-linear-gradient(top, #e1edce, #e1edce);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e1edce), to(#e1edce));
+  background-image: -webkit-linear-gradient(top, #e1edce, #e1edce);
+  background-image: -o-linear-gradient(top, #e1edce, #e1edce);
+  background-image: linear-gradient(to bottom, #e1edce, #e1edce);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e1edce', endColorstr='#e1edce', GradientType=0);
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: #ccc;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #e1edce;
+  background-color: #e1edce;
+  background-image: linear-gradient(to bottom, #e1edce, #e1edce);
+  background-image: -moz-linear-gradient(top, #e1edce, #e1edce);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e1edce), to(#e1edce));
+  background-image: -webkit-linear-gradient(top, #e1edce, #e1edce);
+  background-image: -o-linear-gradient(top, #e1edce, #e1edce);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e1edce', endColorstr='#e1edce', GradientType=0);
+}
+
+/* icons */
+
+[class^="icon-"],
+[class*=" icon-"] {
+margin-right: 4px;
+background-image: url("../images/glyphicons-halflings.png");
+}
+
+/* White icons with optional class, or on hover/active states of certain elements */
+
+.icon-white,
+.nav > .active > a > [class^="icon-"],
+.nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"] {
+background-image: url("../images/glyphicons-halflings-white.png");
+}
+
+/* forms input */
+
+label, input, button, select, textarea {
+    font-size: 100%;
+    font-weight: normal;
+    line-height: auto;
 }
