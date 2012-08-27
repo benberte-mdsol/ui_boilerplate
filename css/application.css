@@ -5,6 +5,9 @@ a{
   text-decoration: underline;
 }
 
+a:hover{
+	color: #333;
+}
 .input {
   margin: 0 8px;
 }
@@ -127,7 +130,23 @@ span.percents {
 }
 td.center-buttons {
 	padding-left: 220px;
-
+}
+.bar-chart {
+	width: 98px;
+	border: 1px solid #ccc;
+	height: 12px;
+	margin-top: 4px;
+	background: #fff;
+}
+.positive-bar {
+	width:98px;
+	height:12px;
+	background: #34662b;
+}
+.negative-bar {
+	width:98px;
+	height:12px;
+	background: #99000a;
 }
 /* footer */
 
@@ -139,6 +158,11 @@ footer {
 
 /* buttons */
 
+button {
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
 .btn {
     padding: 2px 8px;
     margin: 0 8px;
