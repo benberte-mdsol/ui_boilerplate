@@ -50,7 +50,6 @@
 
 
 </header>
-
 <nav id="navigation_bar">
   <ul class="clearfix">
     <li class="first">
@@ -73,7 +72,7 @@
 
 <!-- FAT HEADER -->
 <div class="container fatheader">
-    <div class=" span2 selected">
+   <div class=" span2 selected first">
       <a href="#">Roles</a>
       <h3>13</h3>
     </div>  
@@ -124,15 +123,10 @@
         <input class="pull-left xlarge" type="text" placeholder="Add Filter"/>
     </div>
     <button class=" pull-left btn disabled" disabled>Add Filter</button>
-  
-
-    <span class="pull-left filter-pill"><a  href="">Role is <strong>Monitor</strong></a> <a class="close" href="">x</a></span> 
-
 
     <div class="clearfix"></div>
 
-    <h3 class="pull-left">2 Filtered Results</h3>
-      <a class="pull-left clear-results" href=""> Clear Results</a>
+    <h3 class="pull-left">13 Unfiltered Results</h3>
 
 </div>
 
@@ -152,14 +146,14 @@
   <tbody>
     <tr>
       <td><input type="checkbox"/></td>
-      <td>Monitor 1</td>
-      <td>1 </td>
-      <td>1 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+      <td><a href="#">Clinical Coder</a></td>
+      <td>10 </td>
+      <td>4 <span class="percents">40%</span> 
+          <div class="bar-chart pull-right"> <div class="negative-bar"  style="width:40px"></div>
           </div>
       </td>
       <td>0</td>
-      <td>1 <span class="percents">100%</span> 
+      <td>4 <span class="percents">100%</span> 
           <div class="bar-chart pull-right"> <div class="positive-bar"></div>
           </div>
       </td>
@@ -179,15 +173,16 @@
 
     <tr>
       <td><input type="checkbox" /></td>
-      <td>Monitor 2</td>
-      <td>1</td>
-      <td>0 <span class="percents">0%</span> 
-          <div class="bar-chart pull-right">
+      <td><a href="#">CRC</a></td>
+      <td>10</td>
+      <td>1 <span class="percents">10%</span> 
+          <div class="bar-chart pull-right"> <div class="negative-bar" style="width: 10px"></div>
           </div>
       </td>
-      <td>0</td>
-      <td>0 <span class="percents">0%</span> 
-          <div class="bar-chart pull-right"> 
+      <td>2</td>
+      <td>1 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right">
+          <div class="positive-bar"></div> 
           </div>
       </td>
        <td>
@@ -206,15 +201,15 @@
 
     <tr>
       <td><input type="checkbox"/></td>  
-      <td>Monitor 3</td>
-      <td>1 </td>
-      <td>1 <span class="percents">100%</span> 
+      <td><a href="#">CRC 2</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span> 
           <div class="bar-chart pull-right"> <div class="positive-bar"></div>
           </div>
       </td>      
       <td>0</td>
-      <td>1 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+      <td>5 <span class="percents">50%</span>  
+          <div class="bar-chart pull-right"> <div class="positive-bar"  style="width:50px"></div>
           </div>
       </td>
        <td>
@@ -233,9 +228,244 @@
 
      <tr>
       <td><input type="checkbox"/></td>  
-      <td>Monitor 4</td>
-      <td>1 </td>
-      <td >0 <span class="percents">0%</span> 
+      <td><a href="#">Data Manager</a></td>
+      <td>10 </td>
+      <td>6 <span class="percents">60%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar" style="width: 60px"></div>
+          </div>
+      </td>
+      <td>1</td>
+      <td>1 <span class="percents">20%</span> 
+          <div class="bar-chart pull-right"> <div class="negative-bar" style="width:20px"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Data Manager 2</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>3</td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Monitor 1</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>5 <span class="percents">50%</span> 
+          <div class="bar-chart pull-right"><div class="positive-bar" style="width:50px;"></div> 
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Monitor 2</a></td>
+      <td>10 </td>
+      <td>5 <span class="percents">50%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar" style="width: 50px"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>5 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Private Investigator 1</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>2 <span class="percents">20%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Sub Private Investigator 1</a></td>
+      <td>10 </td>
+      <td>2 <span class="percents">20%</span> 
+          <div class="bar-chart pull-right"> <div class="negative-bar" style="width:20px"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>2 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"><div class="positive-bar"></div> 
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Sub Private Investigator 2</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span>
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>3</td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 1</a></td>
+      <td>10 </td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>10 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 2</a></td>
+      <td>10 </td>
+      <td>6 <span class="percents">60%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar" style="width:60px;"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>6 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 3</a></td>
+      <td>10 </td>
+      <td>0 <span class="percents">0%</span> 
           <div class="bar-chart pull-right"> 
           </div>
       </td>
@@ -257,6 +487,7 @@
         </div>
       </td>
     </tr>
+
     <tr>
        <td  class="center-buttons" colspan="7">
        <button class="btn primary">Add Role</button>
@@ -287,7 +518,6 @@
 
 
 </footer>
-
 <!-- END SITE CONTENT --> 
 
 <!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 

@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>UI Prototype</title>
+<title>Users Assigned to StudyName1 - Filtered</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -31,7 +31,7 @@
 
     <ul class="pull-right account-nav">
       <li> 
-        <div class="pull-left input-header">
+        <div class="pull-left input">
         <select>
             <option>Role</option>
             <option>Site</option>
@@ -56,50 +56,55 @@
     <li class="first">
     <a href="/"><img alt="Home" src="images/home.png"/></a>
     </li>
-    <li id="apps"></li>
-    <li id="studies"></li> 
+    <li id="apps">Studyname1</li>
+    <li id="studies">StudyAdmin</li> 
   </ul>
 </nav>
+
 
 <div class="container">
 
     <button class="btn primary pull-right">Add Role</button>
     <button class="btn primary pull-right">Resend Assignments</button>
     
-<h2>Monitors Assigned to StudyName1</h2>
+<h2>Users Assigned to StudyName1</h2>
 
 
 
 <!-- FAT HEADER -->
-<div class="container fatheader"> 
+<div class="container fatheader">
+    <div class=" span2 selected">
+      <a href="#">Roles</a>
+      <h3>13</h3>
+    </div>  
 
     <div class="span2">
       <a href="#">Total Accepted</a>
-      <h3>0%</h3>
+      <h3>65% &nbsp; 84</h3>
     </div>
 
     <div class="span2">
       <a href="#">Not Accepted</a>
-      <h3>25</h3>
+      <h3>46</h3>
     </div>
 
     <div class="span2">
       <a href="#">Total Sent</a>
-      <h3>25</h3>
+      <h3>130</h3>
     </div>
 
     <div class="span2">
       <a href="#">Hard Bounce</a>
-      <h3>0</h3>
+      <h3>10</h3>
     </div>
 
     <div class="span2">
       <a href="#">Passed eLearning</a>
-      <h3>15% &nbsp; 3</h3>
+      <h3>67% &nbsp; 56</h3>
     </div>
     <div class="span2 last">
       <a href="#">Deactivated Users</a>
-      <h3>0</h3>
+      <h3>1</h3>
     </div>
 
  </div>
@@ -119,13 +124,15 @@
         <input class="pull-left xlarge" type="text" placeholder="Add Filter"/>
     </div>
     <button class=" pull-left btn disabled" disabled>Add Filter</button>
+  
+
+    <span class="pull-left filter-pill"><a  href="">Role is <strong>Monitor</strong></a> <a class="close" href="">x</a></span> 
 
 
-    <span class="pull-left filter-pill"><a  href="">Authorized by <strong>Stark Industries</strong></a> <a class="close" href="">x</a></span> 
+    <div class="clearfix"></div>
 
-
-  <div class="clearfix"></div>
-    <h3 class="pull-left">25 Filtered Results</h3>
+    <h3 class="pull-left">2 Filtered Results</h3>
+      <a class="pull-left clear-results" href=""> Clear Results</a>
 
 </div>
 
@@ -133,11 +140,11 @@
   <thead>
     <tr>
       <th></th>
-      <th>Email Address</th>
-      <th>Date Sent </br> Date Accepted </th>
+      <th>Role</th>
+      <th>Sent</th>
+      <th>Total Accepted</th>
+      <th>Hard Bounce</th>
       <th>Passed eLearning</th>
-      <th>Sites</th>
-      <th>Authorized by</th>
       <th>Action Items</th>
     </tr>
   </thead>
@@ -145,12 +152,18 @@
   <tbody>
     <tr>
       <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
+      <td>Monitor 1</td>
+      <td>1 </td>
+      <td>1 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+      <td>0</td>
+      <td>1 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>
+       <td>
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
@@ -165,13 +178,19 @@
     </tr>
 
     <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </td>
-      <td> October 20, 2011</td>
-      <td> </td>
-      <td> </td>
-      <td>
+      <td><input type="checkbox" /></td>
+      <td>Monitor 2</td>
+      <td>1</td>
+      <td>0 <span class="percents">0%</span> 
+          <div class="bar-chart pull-right">
+          </div>
+      </td>
+      <td>0</td>
+      <td>0 <span class="percents">0%</span> 
+          <div class="bar-chart pull-right"> 
+          </div>
+      </td>
+       <td>
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
@@ -186,34 +205,19 @@
     </tr>
 
     <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
+      <td><input type="checkbox"/></td>  
+      <td>Monitor 3</td>
+      <td>1 </td>
+      <td>1 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
+      </td>      
+      <td>0</td>
+      <td>1 <span class="percents">100%</span> 
+          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
+          </div>
       </td>
-    </tr>        
-
-    <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> June 25, 2011</td>
-      <td> Sites 201, Sites 202</td>
-      <td> </td>
-      <td>
+       <td>
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
@@ -227,13 +231,19 @@
       </td>
     </tr>
 
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">alongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
+     <tr>
+      <td><input type="checkbox"/></td>  
+      <td>Monitor 4</td>
+      <td>1 </td>
+      <td >0 <span class="percents">0%</span> 
+          <div class="bar-chart pull-right"> 
+          </div>
+      </td>
+      <td>0</td>
+      <td>0 <span class="percents">0%</span> 
+          <div class="bar-chart pull-right"> 
+          </div>
+      </td>
       <td>
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
@@ -247,134 +257,6 @@
         </div>
       </td>
     </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-    
-
     <tr>
        <td  class="center-buttons" colspan="7">
        <button class="btn primary">Add Role</button>
