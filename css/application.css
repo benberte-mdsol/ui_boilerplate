@@ -161,14 +161,26 @@ ul.user-row li.userinfo {
   font-weight: bold;
   color: #111;
 }
+/* fatheader in tables */
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 /* fatheader */
 .fatheader {
 	border: 1px solid #ddd;
-  border-bottom: none;
+  border-bottom: 1px solid #bbb;
   background: #f6f6f6;
 	width: 938px;
-	height: auto;
 }
 .fatheader div {
 	background: #f6f6f6;
@@ -176,9 +188,8 @@ ul.user-row li.userinfo {
 	display: inline-block;
 	border-right: 1px solid #ddd;
   border-left: 1px solid #fff;
-  border-bottom: 1px solid #bbb;
-	width: 117px;
-	padding: 8px 4px 0 8px;
+	padding: 8px 8px 0 8px;
+  width:114px;
 	margin: 0;
 }
 .fatheader h3 {
@@ -419,4 +430,16 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   margin-bottom: 8px;
+}
+
+ul.presentation-nav {
+  margin: 8px;
+  text-align: center;
+}
+
+ul.presentation-nav li{
+  text-align: center;
+  display: inline;
+  list-style-type: none;
+  margin-right: 8px;
 }
