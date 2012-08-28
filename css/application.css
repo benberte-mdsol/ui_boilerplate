@@ -11,12 +11,6 @@ a:hover{
 .input {
   margin: 0 8px;
 }
-
-h2 {
-  margin: 4px 0;
-  line-height: 30px;
-}
-
 /* header */
 header {
 	height:64px;
@@ -37,11 +31,13 @@ header div.logo{
 ul.account-nav {
   margin: 16px 8px;
 }
+
 ul.account-nav li {
   display: inline;
   margin: 8px 0 0 16px;
   list-style-type: none
 }
+
 #checkmate-nav {
 	text-align: center;
 	width: 100%;
@@ -49,21 +45,15 @@ ul.account-nav li {
 	margin-bottom: 24px;
 	height: 24px;
 }
-/* User page */
-
-.user-info {
-  margin-right: 32px;
-  margin-bottom: 20px;
-}
-
 
 /* fatheader */
 .fatheader {
 	border: 1px solid #ddd;
 	width: 938px;
-  background: #f6f6f6;
+	height: auto;
 }
 .fatheader div {
+	background: #f6f6f6;
 	float: left;
 	display: inline-block;
 	border-right: 1px solid #ddd;
@@ -94,10 +84,11 @@ ul.account-nav li {
 }
 
 .filter-pill {
+  text-decoration: none;
   background: #bddeba;
   color: #34662b;
   padding: 4px 8px;
-  font-size:90%;
+  font-size:80%;
   border-radius: 4px;
   margin: 0 8px;
 }
@@ -113,8 +104,6 @@ thead {
 	color: #fff;
 
 }
-
-
 .table-bordered {
 -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
@@ -233,6 +222,12 @@ button {
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e1edce', endColorstr='#e1edce', GradientType=0);
 }
 
+.close {
+	text-decoration: none;
+	line-height: 18px;
+	padding: 0 0 0 8px;  
+}
+
 /* icons */
 
 [class^="icon-"],
@@ -259,4 +254,28 @@ label, input, button, select, textarea {
     font-size: 100%;
     font-weight: normal;
     line-height: auto;
+}
+
+input-header {
+	margin:0px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  margin-bottom: 8px;
 }
