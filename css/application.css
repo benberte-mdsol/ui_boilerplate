@@ -11,6 +11,12 @@ a:hover{
 .input {
   margin: 0 8px;
 }
+
+h2 {
+  margin: 4px 0;
+  line-height: 30px;
+}
+
 /* header */
 header {
 	height:64px;
@@ -43,15 +49,21 @@ ul.account-nav li {
 	margin-bottom: 24px;
 	height: 24px;
 }
+/* User page */
+
+.user-info {
+  margin-right: 32px;
+  margin-bottom: 20px;
+}
+
 
 /* fatheader */
 .fatheader {
 	border: 1px solid #ddd;
 	width: 938px;
-	height: auto;
+  background: #f6f6f6;
 }
 .fatheader div {
-	background: #f6f6f6;
 	float: left;
 	display: inline-block;
 	border-right: 1px solid #ddd;
@@ -101,6 +113,8 @@ thead {
 	color: #fff;
 
 }
+
+
 .table-bordered {
 -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
