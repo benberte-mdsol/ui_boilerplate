@@ -420,3 +420,15 @@ input[type="color"],
 .uneditable-input {
   margin-bottom: 8px;
 }
+
+ul.presentation-nav {
+  margin: 8px;
+  text-align: center;
+}
+
+ul.presentation-nav li{
+  text-align: center;
+  display: inline;
+  list-style-type: none;
+  margin-right: 8px;
+}
