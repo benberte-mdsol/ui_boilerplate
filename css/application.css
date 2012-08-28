@@ -38,13 +38,113 @@ ul.account-nav li {
   list-style-type: none
 }
 
-#checkmate-nav {
+
+/*  #checkmate-nav {
 	text-align: center;
 	width: 100%;
 	background: #999;
 	margin-bottom: 24px;
 	height: 24px;
-}
+}  */
+
+
+/* checkmate nav */
+#navigation_bar {
+  background-color: #cdcccc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3f3f3), to(#cdcdcc));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #cdcdcc);
+  background-image: -moz-linear-gradient(top, #f3f3f3, #cdcdcc);
+  background-image: -ms-linear-gradient(top, #f3f3f3, #cdcdcc);
+  background-image: -o-linear-gradient(top, #f3f3f3, #cdcdcc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$ie-start', endColorstr='$ie-end',GradientType=0 );
+  text-shadow: 0, 1px, 0, white;
+  filter: dropshadow(color=white, offx=0, offy=1);
+  font-size: 11px;
+  border-bottom: 1px solid #989898;
+  border-top: 1px solid #dededd;
+  clear: both;
+  overflow: visible;
+  position: relative;
+  width: auto; 
+  margin-bottom: 20px;}
+  #navigation_bar a.nav_drop_down {
+    text-decoration: underline;
+    display: block;
+    height: 16px;
+    padding: 4px 18px 4px 8px;
+    border-right: 1px solid #ccc;
+    line-height: 16px;
+    color: #333;
+    background: url("nav_inactive.png") no-repeat scroll right center transparent; }
+    #navigation_bar a.nav_drop_down:hover {
+      background-color: #cccccc;
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#f2f2f2));
+      background-image: -webkit-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -moz-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -ms-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -o-linear-gradient(top, #cccccc, #f2f2f2);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$ie-start', endColorstr='$ie-end',GradientType=0 );
+      background-image: url("nav_active.png");
+      text-decoration: none; }
+  #navigation_bar > ul {
+    border-top: 1px solid #fff; }
+    #navigation_bar > ul > li {
+      float: left;
+      list-style-type: none;
+      border-right: 1px solid #fff; }
+      #navigation_bar > ul > li.active > a {
+        text-decoration: none;
+        background: url("nav_active.png") no-repeat scroll right center transparent; }
+    #navigation_bar > ul li.first a:link, #navigation_bar > ul li.first a:visited {
+      display: block;
+      height: 20px;
+      padding: 4px 8px 0 8px;
+      border-right: 1px solid #ccc; }
+    #navigation_bar > ul li.first a:hover, #navigation_bar > ul li.first a:active {
+      background-color: #cccccc;
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#f2f2f2));
+      background-image: -webkit-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -moz-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -ms-linear-gradient(top, #cccccc, #f2f2f2);
+      background-image: -o-linear-gradient(top, #cccccc, #f2f2f2);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$ie-start', endColorstr='$ie-end',GradientType=0 );
+      border-right: 1px solid #f2f2f2; }
+
+li.rich_crumb ul.nav_drop_down {
+  display: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  margin-top: 1px;
+  width: 280px;
+  padding: 0px;
+  -webkit-box-shadow: 0 2px 5px 2px #cccccc;
+  -moz-box-shadow: 0 2px 5px 2px #cccccc;
+  box-shadow: 0 2px 5px 2px #cccccc; }
+  li.rich_crumb ul.nav_drop_down li {
+    border: medium none;
+    float: none; }
+    li.rich_crumb ul.nav_drop_down li a:link, li.rich_crumb ul.nav_drop_down li a:visited {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      border-bottom: 1px solid #f2f2f2; }
+    li.rich_crumb ul.nav_drop_down li a:hover, li.rich_crumb ul.nav_drop_down li a:active {
+      background: #bddebe;
+      border-bottom: 1px solid #fff; }
+    li.rich_crumb ul.nav_drop_down li.separator {
+      border-bottom: 1px dotted #ccc;
+      height: 0; }
+    li.rich_crumb ul.nav_drop_down li.unavailable a:link, li.rich_crumb ul.nav_drop_down li.unavailable a:visited {
+      background: url(i_customs_user.png) no-repeat scroll left center;
+      background-position: 12px 8px;
+      border-bottom: 1px solid #f2f2f2;
+      padding-left: 32px; }
+    li.rich_crumb ul.nav_drop_down li.unavailable a:hover, li.rich_crumb ul.nav_drop_down li.unavailable a:active {
+      color: #666666;
+      background-color: #bddebe;
+      text-shadow: 0, 1px, 0, white;
+      filter: dropshadow(color=white, offx=0, offy=1); }
+
 
 /* fatheader */
 .fatheader {
@@ -70,6 +170,9 @@ ul.account-nav li {
 .fatheader div.last {
 	border-right: 1px solid #f6f6f6;
 }
+.fatheader  div:hover {
+    background: #eee;
+} 
 
 .filter-row {
 	float: left;
@@ -84,14 +187,26 @@ ul.account-nav li {
 }
 
 .filter-pill {
-  text-decoration: none;
   background: #bddeba;
   color: #34662b;
   padding: 4px 8px;
-  font-size:80%;
+  font-size:90%;
   border-radius: 4px;
   margin: 0 8px;
 }
+
+.filter-pill a {
+  text-decoration: none;
+}
+
+.close{
+  text-decoration: none;
+  line-height: 12px;
+  padding: 0 0 0 8px;  
+  float: none;
+  text-shadow:none;
+}
+
 
 .clear-results{
 margin: 23px 0 0 16px;
@@ -222,11 +337,6 @@ button {
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e1edce', endColorstr='#e1edce', GradientType=0);
 }
 
-.close {
-	text-decoration: none;
-	line-height: 18px;
-	padding: 0 0 0 8px;  
-}
 
 /* icons */
 
