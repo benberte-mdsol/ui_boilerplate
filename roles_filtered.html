@@ -30,23 +30,25 @@
   </div>
 
     <ul class="pull-right account-nav">
-      <li> 
-        <div class="pull-left input">
-        <select>
-            <option>Role</option>
-            <option>Site</option>
-            <option>Authorized by</option>
-            <option>Depot</option>
-            <option>Team</option>
-        </select>
-        </div>
-      </li>
-      <li><a href="">Peter Parker</a></li>
+      <li>
+          <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button class="btn">Clinical Quality Management</button>
+          <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+    </li>
+      <li><a href=""><i class="icon-user"></i>Peter Parker</a></li>
       <li><a href="">Help</a></li>
       <li><a href="">Log Out</a></li>
-      
     </ul>
-
 
 
 </header>
@@ -56,16 +58,18 @@
     <li class="first">
     <a href="/"><img alt="Home" src="images/home.png"/></a>
     </li>
-    <li id="apps">Studyname1</li>
-    <li id="studies">StudyAdmin</li> 
+    <li id="apps"></li>
+    <li id="studies"></li> 
   </ul>
 </nav>
 
 
 <div class="container">
 
-    <button class="btn primary pull-right">Add Role</button>
-    <button class="btn primary pull-right">Resend Assignments</button>
+ <div class="btn-group pull-right">
+    <button class="btn btn-mini">Add Role</button>
+    <button class="btn btn-mini">Resend All Assignments</button>
+    </div>
     
 <h2>Users Assigned to StudyName1</h2>
 
@@ -80,7 +84,7 @@
 
     <div class="span2">
       <a href="#">Total Accepted</a>
-      <h3>65% &nbsp; 84</h3>
+        <h3>84 &nbsp;&nbsp;<span class="percentage">65%</span></h3>
     </div>
 
     <div class="span2">
@@ -100,7 +104,7 @@
 
     <div class="span2">
       <a href="#">Passed eLearning</a>
-      <h3>67% &nbsp; 56</h3>
+      <h3>56 &nbsp;&nbsp;<span class="percentage">67%</span></h3>
     </div>
     <div class="span2 last">
       <a href="#">Deactivated Users</a>
@@ -110,20 +114,23 @@
  </div>
 
 <div class="filter-row">
-  <p class="pull-left">Filter </p>
-    <div class="pull-left input">
-          <select>
-              <option>Role</option>
-              <option>Site</option>
-              <option>Authorized by</option>
-              <option>Depot</option>
-              <option>Team</option>
-          </select>
-    </div>
+    <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button class="btn btn-mini">Filter by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
     <div class="input">
         <input class="pull-left xlarge" type="text" placeholder="Add Filter"/>
     </div>
-    <button class=" pull-left btn disabled" disabled>Add Filter</button>
+    <button class=" pull-left btn btn-mini disabled" disabled>Add Filter</button>
   
 
     <span class="pull-left filter-pill"><a  href="">Role is <strong>Monitor</strong></a> <a class="close" href="">x</a></span> 
@@ -131,8 +138,8 @@
 
     <div class="clearfix"></div>
 
-    <h3 class="pull-left">2 Filtered Results</h3>
-      <a class="pull-left clear-results" href=""> Clear Results</a>
+    <h3 class="pull-left">4 Filtered Results</h3>
+      <a class="pull-right clear-results" href=""> Clear Results</a>
 
 </div>
 
