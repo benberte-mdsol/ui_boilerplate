@@ -64,9 +64,9 @@
 
 <div class="container">
 
-    <div class="btn-group pull-right">
-    <button class="btn-mini">Add Role</button>
-    <button class="btn-mini">Resend All Assignments</button>
+     <div class="btn-group pull-right">
+    <button class="btn btn-mini">Add Role</button>
+    <button class="btn btn-mini">Resend All Assignments</button>
     </div>
     
 <h2>Monitors Assigned to StudyName1</h2>
@@ -108,20 +108,23 @@
  </div>
 
 <div class="filter-row">
-  <p class="pull-left">Filter </p>
-    <div class="pull-left input">
-          <select>
-              <option>Role</option>
-              <option>Site</option>
-              <option>Authorized by</option>
-              <option>Depot</option>
-              <option>Team</option>
-          </select>
-    </div>
+    <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button class="btn btn-mini">Filter by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
     <div class="input">
         <input class="pull-left xlarge" type="text" placeholder="Add Filter"/>
     </div>
-    <button class=" pull-left btn disabled" disabled>Add Filter</button>
+    <button class=" pull-left btn btn-mini disabled" disabled>Add Filter</button>
 
 
     <span class="pull-left filter-pill"><a  href="">Authorized by <strong>Stark Industries</strong></a> <a class="close" href="">x</a></span> 
@@ -149,7 +152,7 @@
     <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -170,8 +173,8 @@
     <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </td>
-      <td> October 20, 2011</td>
+      <td class="date-small">December 31, 2011 </td>
+      <td class="date-small"> October 20, 2011</td>
       <td> </td>
       <td> </td>
       <td>
@@ -191,7 +194,7 @@
     <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -212,8 +215,8 @@
     <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
-      <td> June 25, 2011</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small"> June 25, 2011</td>
       <td> Sites 201, Sites 202</td>
       <td> </td>
       <td>
@@ -233,7 +236,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">alongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -254,7 +257,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -275,7 +278,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -296,7 +299,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -317,7 +320,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -338,7 +341,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -359,7 +362,7 @@
         <tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td>December 31, 2011 </br> January 1, 2012</td>
+      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
       <td> </td>
       <td> </td>
       <td> </td>

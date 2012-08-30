@@ -14,6 +14,11 @@ a:hover{
 li {
   line-height: 0;
 }
+
+h2 {
+  margin-bottom: 8px;
+  line-height: 30px;
+}
 /* header */
 header {
 	height:64px;
@@ -38,7 +43,8 @@ ul.account-nav {
 ul.account-nav li {
   display: inline;
   margin: 8px 0 0 16px;
-  list-style-type: none
+  list-style-type: none;
+  font-size: 90%;
 }
 
 .search-bar {
@@ -64,7 +70,7 @@ ul.account-nav li {
   overflow: visible;
   position: relative;
   width: auto; 
-  margin-bottom: 20px;}
+  margin-bottom: 8px;}
   #navigation_bar a.nav_drop_down {
     text-decoration: underline;
     display: block;
@@ -168,18 +174,6 @@ ul.user-row li.userinfo {
   font-weight: bold;
   color: #111;
 }
-/* fatheader in tables */
- 
-
-
-
-
-
-
-
-
-
-
 
 
 /* fatheader */
@@ -200,7 +194,7 @@ ul.user-row li.userinfo {
 	margin: 0;
 }
 .fatheader h3 {
-  margin-bottom: 0; 
+  margin: 0; 
 }
 .fatheader  div.selected {
 	background: #666;
@@ -232,7 +226,7 @@ ul.user-row li.userinfo {
 	float: left;
 	display: inline;
 	border:1px solid #ddd;
-	padding: 16px 8px 0 8px;
+	padding: 8px 8px 0 8px;
 	width: 922px;
 	margin: 0;
 }
@@ -243,7 +237,7 @@ ul.user-row li.userinfo {
 .filter-pill {
   background: #bddeba;
   color: #34662b;
-  padding: 4px 8px;
+  padding: 1px 6px;
   font-size:80%;
   border-radius: 4px;
   margin: 0 8px;
@@ -302,6 +296,10 @@ span.percents {
 td.center-buttons {
 	padding-left: 220px;
 }
+
+td.date-small {
+  font-size: 85%;
+}
 .bar-chart {
 	width: 98px;
 	border: 1px solid #ccc;
@@ -330,20 +328,13 @@ footer {
 /* buttons */
 .btn {
   font-size: 12px;
+  padding: 2px 8px;
 }
 
 .btn-group .btn {
     margin:0;
     text-decoration: none;
   }
-
-.btn-mini {
-  margin: 4px;
-}
-
-.btn .caret {
-    margin: 8px 0 0 4px;
-}
 
 .btn-group > .btn, .btn-group > .dropdown-menu {
     font-size: 12px;
@@ -352,7 +343,13 @@ footer {
 .btn-group > .dropdown-menu {
     font-size: 12px;
 }
+.btn-group .btn .caret {
+margin-left: 0px;
+}
 
+.btn .caret {
+margin-left: 4px;
+}
 .btn-toolbar {
   margin: 0;
 }
@@ -433,6 +430,7 @@ input-header {
 	margin:0px;
 }
 
+
 select,
 textarea,
 input[type="text"],
@@ -450,7 +448,11 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  margin-bottom: 8px;
+height: 16px;
+padding: 2px 4px;
+font-size: 12px;
+line-height: 18px;
+margin: 0px 4px;
 }
 
 ul.presentation-nav {
