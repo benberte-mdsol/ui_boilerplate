@@ -11,6 +11,9 @@ a:hover{
 .input {
   margin: 0 8px;
 }
+li {
+  line-height: 0;
+}
 /* header */
 header {
 	height:64px;
@@ -38,7 +41,10 @@ ul.account-nav li {
   list-style-type: none
 }
 
-
+.search-bar {
+  margin: 16px 4px 0 4px;
+  width: auto;
+}
 
 /* checkmate nav */
 #navigation_bar {
@@ -147,6 +153,7 @@ ul.user-row li {
   list-style-type: none;
   font-size: 90%;
   color: #666;
+  line-height: 20px;
 }
 
 ul.user-row li.username {
@@ -188,8 +195,8 @@ ul.user-row li.userinfo {
 	display: inline-block;
 	border-right: 1px solid #ddd;
   border-left: 1px solid #fff;
-	padding: 8px 8px 0 8px;
-  width:114px;
+	padding: 8px 7px 0 8px;
+  width:117px;
 	margin: 0;
 }
 .fatheader h3 {
@@ -210,12 +217,16 @@ ul.user-row li.userinfo {
 }
 .fatheader  div:hover {
     background: #BDDEBE;
-    color: #666
+    color: #333;
 } 
 .fatheader  div:hover a{
     background: #BDDEBE;
-    color: #666
+    color: #333;
 } 
+
+.percentage {
+  font-size: 75%;
+}
 
 .filter-row {
 	float: left;
@@ -256,7 +267,7 @@ ul.user-row li.userinfo {
 
 
 .clear-results{
-margin: 23px 0 0 16px;
+margin: 24px 0 0 16px;
   
 }
 
@@ -269,7 +280,7 @@ thead {
 	color: #fff;
 }
 
-tr:hover{
+tbody tr:hover{
    background:#BDDEBE;
 }
 .table-bordered thead:first-child tr:first-child th:last-child,
@@ -317,15 +328,17 @@ footer {
 
 
 /* buttons */
-
-button {
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-}
 .btn {
-    padding: 2px 8px;
-    margin: 0 8px;
+  font-size: 12px;
+}
+
+.btn-group .btn {
+    margin:0;
+    text-decoration: none;
+  }
+
+.btn-mini {
+  margin: 4px;
 }
 
 .btn .caret {
@@ -340,6 +353,9 @@ button {
     font-size: 12px;
 }
 
+.btn-toolbar {
+  margin: 0;
+}
 .dropdown-menu {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
@@ -379,12 +395,17 @@ button {
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e1edce', endColorstr='#e1edce', GradientType=0);
 }
 
+.input-append .add-on, .input-prepend .add-on, .input-append .btn, .input-prepend .btn {
+  border-radius: 4px;
+}
+
 
 /* icons */
 
 [class^="icon-"],
 [class*=" icon-"] {
-margin-right: 4px;
+margin-right: 2px;
+margin-left: 2px;
 background-image: url("../images/glyphicons-halflings.png");
 }
 
