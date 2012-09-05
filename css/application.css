@@ -37,7 +37,7 @@ ul.account-nav {
 
 ul.account-nav li {
   display: inline;
-  margin: 8px 0 0 16px;
+  margin: 8px 4px 0 4px;
   list-style-type: none;
   font-size: 90%;
 }
@@ -174,7 +174,6 @@ ul.user-row li.userinfo {
 /* fatheader */
 .fatheader {
 	border: 1px solid #ddd;
-  border-bottom: 1px solid #bbb;
   background: #f6f6f6;
 	width: 938px;
 }
@@ -398,6 +397,8 @@ margin-left: 4px;
 [class*=" icon-"] {
 margin-right: 2px;
 margin-left: 2px;
+margin-top: 0;
+margin-bottom: 0;
 background-image: url("../images/glyphicons-halflings.png");
 }
 
