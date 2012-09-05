@@ -65,8 +65,8 @@
 <div class="container">
 
     <div class="btn-group pull-right">
-    <button data-toggle="modal" href="#myModal" class="btn btn-mini">Add Role</button>
-    <button class="btn btn-mini">Resend All Assignments</button>
+    <button data-toggle="modal" href="#myModal" class="btn btn-mini"><i class="icon-plus"></i>Add Role</button>
+    <button data-toggle="modal" href="#myModal" class="btn btn-mini"><i class="icon-envelope"></i>Resend All Assignments</button>
     </div>
 
 <h2>Users Assigned to StudyName1</h2>
@@ -496,10 +496,10 @@
 
     <tr>
        <td  class="center-buttons" colspan="7">
-       <button data-toggle="modal" href="#myModal" class="btn btn primary">Add Role</button>
-       <button class="btn primary">Resend Assignments</button>
-       <button class="btn primary">Export</button>
-       <button class="btn primary">Deactivate All Users</button> 
+       <button data-toggle="modal" href="#myModal" class="btn btn primary"><i class="icon-plus"></i>Add Role</button>
+       <button class="btn primary"><i class="icon-envelope"></i>Resend Assignments</button>
+       <button class="btn primary"><i class="icon-share-alt"></i>Export</button>
+       <button class="btn primary"><i class="icon-remove"></i>Deactivate All Users</button> 
      </td>
     </tr>  
     </tbody>
@@ -539,6 +539,45 @@
 
 
    <!-- Modal content -->
+   <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
+      <div class="modal-header">
+         <button aria-hidden="true" data-dismiss="modal" class="close pull-right" type="button" >x</button>
+         <h3 id="myModalLabel">Add Role</h3>
+      </div>
+      
+      <div class=" modal-body">
+        <h4>Text in a modal</h4>
+        <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button class="btn btn-mini">Add Role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        </div>
+        <div class="input">
+        <input class="pull-left" type="text" placeholder="Add Role"/>
+    </div>
+    <button class=" pull-left btn btn-mini disabled" disabled>Add Role</button>
+     </div>
+    
+    <div class="clearfix"></div>
+        
+
+      <div class="modal-footer">
+        <button data-dismiss="modal" class="btn">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+
+  </div> <!-- End of Modal // Remove this // -->
+
+
+<!-- Modal content -->
    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
       <div class="modal-header">
          <button aria-hidden="true" data-dismiss="modal" class="close pull-right" type="button" >x</button>
