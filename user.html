@@ -56,8 +56,16 @@
     <li class="first">
     <a href="/"><img alt="Home" src="images/home.png"/></a>
     </li>
-    <li id="apps"></li>
-    <li id="studies"></li> 
+    <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Study Admin</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">StudyName 1</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Sites</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Users</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Peter Parker</a></li>
   </ul>
 </nav>
 
@@ -371,9 +379,10 @@
 
     <tr>
        <td  class="center-buttons" colspan="9">
-       <button class="btn primary">Add Role</button>
-       <button class="btn primary">Resend Assignments</button>
-       <button class="btn primary">Export</button>
+       <button data-toggle="modal" href="#myModal" class="btn btn primary"><i class="icon-plus"></i>Add Role</button>
+       <button class="btn primary"><i class="icon-envelope"></i>Resend Assignments</button>
+       <button class="btn primary"><i class="icon-share-alt"></i>Export</button>
+       <button class="btn primary"><i class="icon-remove"></i>Deactivate All Users</button> 
      </td>
     </tr>  
     </tbody>

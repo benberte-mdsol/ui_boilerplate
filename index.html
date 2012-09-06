@@ -31,8 +31,7 @@
       <li>
           <div class="btn-toolbar pull-left">
         <div class="btn-group">
-          <button class="btn btn-mini">Clinical Quality Management</button>
-          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">Clinical Quality Management<span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -56,8 +55,14 @@
     <li class="first">
     <a href="/"><img alt="Home" src="images/home.png"/></a>
     </li>
-    <li id="apps"></li>
-    <li id="studies"></li> 
+    <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Study Admin</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">StudyName 1</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Users</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">All Roles</a></li>
   </ul>
 </nav>
 
@@ -82,7 +87,11 @@
 
     <div>
       <a href="#">Total Accepted</a>
-      <h3>84 &nbsp;&nbsp;<span class="percentage">65%</span></h3>
+     <h3>
+<i class="icon-ok" style="margin-top: 8px;padding: 0 4px 0 0;"></i>
+85
+<span class="percentage" style="padding: 0 4px 0 8px;">65%</span>
+</h3>
     </div>
 
     <div >
@@ -114,8 +123,7 @@
 <div class="filter-row">
     <div class="btn-toolbar pull-left">
         <div class="btn-group">
-          <button class="btn btn-mini">Filter by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">Filter by<span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -145,7 +153,7 @@
       <th>Total Accepted</th>
       <th>Hard Bounce</th>
       <th>Passed eLearning</th>
-      <th>Action Items</th>
+      <th></th>
     </tr>
   </thead>
 
@@ -538,45 +546,6 @@
  </ul>
 
 
-   <!-- Modal content -->
-   <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
-      <div class="modal-header">
-         <button aria-hidden="true" data-dismiss="modal" class="close pull-right" type="button" >x</button>
-         <h3 id="myModalLabel">Add Role</h3>
-      </div>
-      
-      <div class=" modal-body">
-        <h4>Text in a modal</h4>
-        <div class="btn-toolbar pull-left">
-        <div class="btn-group">
-          <button class="btn btn-mini">Add Role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        </div>
-        <div class="input">
-        <input class="pull-left" type="text" placeholder="Add Role"/>
-    </div>
-    <button class=" pull-left btn btn-mini disabled" disabled>Add Role</button>
-     </div>
-    
-    <div class="clearfix"></div>
-        
-
-      <div class="modal-footer">
-        <button data-dismiss="modal" class="btn">Close</button>
-        <button class="btn btn-primary">Save changes</button>
-      </div>
-
-  </div> <!-- End of Modal // Remove this // -->
-
-
 <!-- Modal content -->
    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
       <div class="modal-header">
@@ -600,8 +569,8 @@
         </div><!-- /btn-group -->
         </div>
         <div class="input">
-        <input class="pull-left" type="text" placeholder="Add Role"/>
-    </div>
+          <input class="pull-left" type="text" placeholder="Add Role"/>
+        </div>
     <button class=" pull-left btn btn-mini disabled" disabled>Add Role</button>
      </div>
     
@@ -609,8 +578,8 @@
         
 
       <div class="modal-footer">
-        <button data-dismiss="modal" class="btn">Close</button>
-        <button class="btn btn-primary">Save changes</button>
+        <button data-dismiss="modal" class="btn">Okay</button>
+        <button class="btn ">Cancel</button>
       </div>
 
   </div> <!-- End of Modal // Remove this // -->
