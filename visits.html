@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Monitors Assigned to StudyName1</title>
+<title>Users Assigned to StudyName1 </title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -27,12 +27,11 @@
 <header id="header">
   <img class="logo" src="images/logo.png">
 
-   <ul class="pull-right account-nav">
+    <ul class="pull-right account-nav">
       <li>
           <div class="btn-toolbar pull-left">
         <div class="btn-group">
-          <button class="btn">Clinical Quality Management</button>
-          <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">Clinical Quality Management<span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -48,74 +47,59 @@
       <li><a href="">Log Out</a></li>
     </ul>
 
-</header>
 
+
+</header>
 <nav id="navigation_bar">
   <ul class="clearfix">
     <li class="first">
     <a href="/"><img alt="Home" src="images/home.png"/></a>
     </li>
     <li class="rich_crumb breadcrumb-container triad" id="apps">
-      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Study Admin</a></li>
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Prancing Pony</a></li>
       <li class="rich_crumb breadcrumb-container triad" id="apps">
-      <a href="#" id="apps_menufirst" class="nav_drop_down"="">StudyName 1</a></li>
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Prancing Pony</a></li>
       <li class="rich_crumb breadcrumb-container triad" id="apps">
-      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Users</a></li>
-      <li class="rich_crumb breadcrumb-container triad" id="apps">
-      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Monitors</a></li>
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Prancing Pony</a></li>
   </ul>
 </nav>
 
+
 <div class="container">
 
-     <div class="btn-group pull-right">
+    <div class="btn-group pull-right">
     <button data-toggle="modal" href="#myModal" class="btn btn-mini"><i class="icon-plus"></i>Add Role</button>
     <button data-toggle="modal" href="#myModal" class="btn btn-mini"><i class="icon-envelope"></i>Resend All Assignments</button>
     </div>
-    
-<h2>Monitors Assigned to StudyName1</h2>
+
+<h2>User Visits</h2>
 
 
 
 <!-- FAT HEADER -->
-<div class="container fatheader"> 
+<div class="container fatheader">
+   <div class="selected first">
+      <a href="#">Past Visits</a>
+      <h3>13</h3>
+    </div>  
 
-    <div class="selected span2">
-      <a href="#">Total Accepted</a>
-      <h3>0&nbsp;&nbsp; <span class="percentage">0%</span></h3>
-    </div>
-
-    <div class="span2">
-      <a href="#">Not Accepted</a>
-      <h3>25</h3>
-    </div>
-
-    <div class="span2">
-      <a href="#">Total Sent</a>
-      <h3>25</h3>
+    <div>
+      <a href="#">Next Visits</a>
+     <h3>
+<i class="icon-ok" style="margin-top: 8px;padding: 0 4px 0 0;"></i>
+85
+<span class="percentage" style="padding: 0 4px 0 8px;">65%</span>
+</h3>
     </div>
 
-    <div class="span2">
-      <a href="#">Hard Bounce</a>
-      <h3>0</h3>
-    </div>
-
-    <div class="span2">
-      <a href="#">Passed eLearning</a>
-      <h3>3&nbsp;&nbsp;<span class="percentage">15%</span></h3>
-    </div>
-    <div class="span2 last">
-      <a href="#">Deactivated Users</a>
-      <h3>0</h3>
-    </div>
+    
 
  </div>
 
 <div class="filter-row">
     <div class="btn-toolbar pull-left">
         <div class="btn-group">
-          <button class="btn btn-mini">Filter by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">Filter by<span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -126,16 +110,13 @@
         </div><!-- /btn-group -->
       </div>
     <div class="input">
-        <input class="pull-left xlarge" type="text" placeholder="Add Filter"/>
+        <input class="pull-left" type="text" placeholder="Add Filter"/>
     </div>
     <button class=" pull-left btn btn-mini disabled" disabled>Add Filter</button>
 
+    <div class="clearfix"></div>
 
-    <span class="pull-left filter-pill"><a  href="">Authorized by <strong>Stark Industries</strong></a> <a class="close" href="">x</a></span> 
-
-
-  <div class="clearfix"></div>
-    <h3 class="pull-left">13 Filtered Results</h3>
+    <h3 class="pull-left">13 Results</h3>
 
 </div>
 
@@ -143,25 +124,31 @@
   <thead>
     <tr>
       <th></th>
-      <th>Email Address</th>
-      <th>Date Sent </br> Date Accepted </th>
-      <th>Passed eLearning</th>
-      <th>Sites</th>
-      <th>Authorized by</th>
-      <th>Action Items</th>
+      <th>Patient</th>
+      <th>Last Visit Date</th>
+      <th>Next Visit Date</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
+      <td><a href="#">BBB123</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
       <td>
-        <div class="btn-group pull-right">
+      <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
           </button>
@@ -171,18 +158,20 @@
             <li><a href="">PDF</a></li>
             </ul>
         </div>
-      </td>
+      </td>   
     </tr>
-
     <tr>
       <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </td>
-      <td class="date-small"> October 20, 2011</td>
-      <td> </td>
-      <td> </td>
+      <td><a href="#">BBB512</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
       <td>
-        <div class="btn-group pull-right">
+      <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
           </button>
@@ -192,217 +181,209 @@
             <li><a href="">PDF</a></li>
             </ul>
         </div>
-      </td>
-    </tr>
-
-    <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>        
-
-    <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td class="date-small"> June 25, 2011</td>
-      <td> Sites 201, Sites 202</td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">alongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
-    </tr>
-
-        <tr>
-      <td><input type="checkbox"/></td>
-      <td><a href="#">areallyreallyreallylongname@longname.com</a></td>
-      <td class="date-small">December 31, 2011 </br> January 1, 2012</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>
-        <div class="btn-group pull-right">
-          <button data-toggle="dropdown" class="btn dropdown-toggle">
-          <i class="icon-cog"></i>Actions<span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu">
-            <li><a href="">CSV</a></li>
-            <li><a href="">Excel</a></li>
-            <li><a href="">PDF</a></li>
-            </ul>
-        </div>
-      </td>
+      </td>   
     </tr>
     
-
+     <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB123</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
     <tr>
-       <td  class="center-buttons" colspan="7">
-       <button data-toggle="modal" href="#myModal" class="btn btn primary"><i class="icon-plus"></i>Add Role</button>
-       <button class="btn primary"><i class="icon-envelope"></i>Resend Assignments</button>
-       <button class="btn primary"><i class="icon-share-alt"></i>Export</button>
-       <button class="btn primary"><i class="icon-remove"></i>Deactivate All Users</button>  
-     </td>
-    </tr>  
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB512</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+
+     <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB123</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB512</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+
+     <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB123</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB512</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+
+     <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB123</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>
+      <td><a href="#">BBB512</a></td>
+      <td>January 1, 2012 </td>
+      <td>January 7, 2012 </td>
+      <td>120</td>
+      <td>123</td>
+      <td>60</td>
+      <td>F</td>
+      <td>123</td>
+      <td>
+      <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>   
+    </tr>
     </tbody>
   <tfoot>
     <tr>
-      <td colspan="7">
+      <td colspan="10">
       Pagination
     </td>
     </tr>
 </tfoot>
 </table>
 </div>
+
+
+
 
 <footer>
 
@@ -415,6 +396,7 @@
 
 
 </footer>
+
  <ul class="presentation-nav">
    <li><a href="index.html">1</a></li>
    <li><a href="roles_filtered.html">2</a></li>
@@ -423,6 +405,47 @@
    <li><a href="site_users.html">5</a></li>
    <li><a href="user.html">6</a></li>
  </ul>
+
+
+<!-- Modal content -->
+   <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
+      <div class="modal-header">
+         <button aria-hidden="true" data-dismiss="modal" class="close pull-right" type="button" >x</button>
+         <h3 id="myModalLabel">Add Role</h3>
+      </div>
+      
+      <div class=" modal-body">
+        <h4>Text in a modal</h4>
+        <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button class="btn btn-mini">Add Role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        </div>
+        <div class="input">
+          <input class="pull-left" type="text" placeholder="Add Role"/>
+        </div>
+    <button class=" pull-left btn btn-mini disabled" disabled>Add Role</button>
+     </div>
+    
+    <div class="clearfix"></div>
+        
+
+      <div class="modal-footer">
+        <button data-dismiss="modal" class="btn">Okay</button>
+        <button class="btn ">Cancel</button>
+      </div>
+
+  </div> <!-- End of Modal // Remove this // -->
+
+
 <!-- END SITE CONTENT --> 
 
 <!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 

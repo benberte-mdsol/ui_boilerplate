@@ -1,5 +1,4 @@
 /* global styles */
-
 a{
   color: #666;
   text-decoration: underline;
@@ -11,6 +10,10 @@ a:hover{
 .input {
   margin: 0 8px;
 }
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
 li {
   line-height: 0;
 }
@@ -19,6 +22,11 @@ h2 {
   margin-bottom: 8px;
   line-height: 30px;
 }
+
+.container {
+  margin-top: 16px;
+}
+
 /* header */
 header {
 	height:64px;
@@ -42,9 +50,29 @@ ul.account-nav li {
   font-size: 90%;
 }
 
+ul.account-nav li .btn-group {
+  margin-right: 4px;
+}
+
 .search-bar {
   margin: 16px 4px 0 4px;
   width: auto;
+}
+
+/* error message */
+
+.flash-failure {
+    background-color: rgb(255, 193, 193);
+    border-bottom:thin solid red;
+    border-top: thin solid red;
+    font-size: 10pt;
+    color: rgb(139, 26, 26);
+    padding: 8px 8px 8px 16px;
+}
+
+.flash-failure img {
+padding: 1px 8px 0 0;
+vertical-align: top;
 }
 
 /* checkmate nav */
@@ -64,8 +92,7 @@ ul.account-nav li {
   clear: both;
   overflow: visible;
   position: relative;
-  width: auto; 
-  margin-bottom: 8px;}
+  width: auto; }
   #navigation_bar a.nav_drop_down {
     text-decoration: underline;
     display: block;
@@ -74,7 +101,7 @@ ul.account-nav li {
     border-right: 1px solid #ccc;
     line-height: 16px;
     color: #333;
-    background: url("nav_inactive.png") no-repeat scroll right center transparent; }
+    background: url("../images/nav_inactive.png") no-repeat scroll right center transparent; }
     #navigation_bar a.nav_drop_down:hover {
       background-color: #cccccc;
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#f2f2f2));
@@ -83,7 +110,7 @@ ul.account-nav li {
       background-image: -ms-linear-gradient(top, #cccccc, #f2f2f2);
       background-image: -o-linear-gradient(top, #cccccc, #f2f2f2);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$ie-start', endColorstr='$ie-end',GradientType=0 );
-      background-image: url("nav_active.png");
+      background-image: url("../images/nav_active.png");
       text-decoration: none; }
   #navigation_bar > ul {
     border-top: 1px solid #fff; }
@@ -93,7 +120,7 @@ ul.account-nav li {
       border-right: 1px solid #fff; }
       #navigation_bar > ul > li.active > a {
         text-decoration: none;
-        background: url("nav_active.png") no-repeat scroll right center transparent; }
+        background: url("../images/nav_active.png") no-repeat scroll right center transparent; }
     #navigation_bar > ul li.first a:link, #navigation_bar > ul li.first a:visited {
       display: block;
       height: 20px;
@@ -113,9 +140,9 @@ li.rich_crumb ul.nav_drop_down {
   display: none;
   background-color: #f2f2f2;
   position: absolute;
-  margin-top: 1px;
   width: 280px;
   padding: 0px;
+  border: 1px solid #dededd;
   -webkit-box-shadow: 0 2px 5px 2px #cccccc;
   -moz-box-shadow: 0 2px 5px 2px #cccccc;
   box-shadow: 0 2px 5px 2px #cccccc; }
@@ -133,6 +160,9 @@ li.rich_crumb ul.nav_drop_down {
     li.rich_crumb ul.nav_drop_down li.separator {
       border-bottom: 1px dotted #ccc;
       height: 0; }
+    li.rich_crumb ul.nav_drop_down li.selected a {
+      font-weight: bold;
+      color: #999; }
     li.rich_crumb ul.nav_drop_down li.unavailable a:link, li.rich_crumb ul.nav_drop_down li.unavailable a:visited {
       background: url(i_customs_user.png) no-repeat scroll left center;
       background-position: 12px 8px;
@@ -143,6 +173,33 @@ li.rich_crumb ul.nav_drop_down {
       background-color: #bddebe;
       text-shadow: 0, 1px, 0, white;
       filter: dropshadow(color=white, offx=0, offy=1); }
+
+div.rolemenu-position {
+  position: relative;
+  float: left;
+  margin: 12px 0px 0px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  z-index: 1000; }
+  div.rolemenu-position a.nav_drop_down {
+    display: block;
+    text-decoration: none;
+    padding: 4px 24px 4px 8px;
+    background: url("../images/nav_inactive.png") no-repeat scroll 98% 40% transparent; }
+    div.rolemenu-position a.nav_drop_down:hover {
+      background: url("../images/nav_active.png") no-repeat scroll 98% 40% transparent; }
+  div.rolemenu-position li#roles.active a.nav_drop_down {
+    background: url("../images/nav_active.png") no-repeat scroll 98% 40% transparent; }
+  div.rolemenu-position ul.nav_drop_down {
+    left: 4px;
+    margin-top: 1px;
+    -webkit-box-shadow: 0px 3px 5px 2px #cccccc;
+    -moz-box-shadow: 0px 3px 5px 2px #cccccc;
+    box-shadow: 0px 3px 5px 2px #cccccc; }
 
 /* user info */
 
@@ -234,7 +291,7 @@ ul.user-row li.userinfo {
   padding: 1px 6px;
   font-size:80%;
   border-radius: 4px;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 
 .filter-pill a {
@@ -268,8 +325,12 @@ thead {
 	color: #fff;
 }
 
-tbody tr:hover{
-   background:#BDDEBE;
+
+.table-striped tbody tr:nth-child(odd) td , .table-striped tbody tr:nth-child(odd) th {
+background-color: #fff;
+}
+.table-striped tbody tr:nth-child(even) td , .table-striped tbody tr:nth-child(even) th {
+background-color: #F9F9F9;
 }
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
@@ -277,6 +338,10 @@ tbody tr:hover{
           border-top-right-radius: 0;
   -moz-border-radius-topright: 0;
 }
+tbody tr:hover{
+   background:#BDDEBE;
+}
+
 .negative {
 background-color:#ffd9d9;
 }
@@ -287,10 +352,13 @@ span.percents {
 	margin-right: 4px;
 	display: inline-block;
 }
+
 td.center-buttons {
 	padding-left: 220px;
 }
-
+td.center-buttons button{
+  margin-left: 16px;
+}
 td.date-small {
   font-size: 85%;
 }
@@ -334,11 +402,11 @@ footer {
     font-size: 12px;
 }
 
-.btn-group > .dropdown-menu {
+.btn-group  .dropdown-menu {
     font-size: 12px;
 }
 .btn-group .btn .caret {
-margin-left: 0px;
+margin-left: 4px;
 }
 
 .btn .caret {
@@ -450,6 +518,35 @@ font-size: 12px;
 line-height: 18px;
 margin: 0px 4px;
 }
+
+/* Modal */
+
+.modal-footer {
+  text-align: center;
+
+}
+
+.modal .close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.modal .close:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+
+
 
 ul.presentation-nav {
   margin: 8px;
