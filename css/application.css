@@ -360,6 +360,17 @@ td.action-btn {
 	background: #99000a;
 }
 /* user table info */
+.user-img {
+  width: 76px;
+  float: left;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.user-img img {
+  border:1px solid #999;
+  margin-bottom: 4px;
+}
 table.user-table {
   width: 800px;
   margin-left: 24px;
