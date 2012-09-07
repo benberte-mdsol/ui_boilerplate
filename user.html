@@ -71,27 +71,37 @@
 
 
 <div class="container">
+  <img src="images/anon_user.png" style="height:88px;border:1px solid #999;" class="pull-left">
 
-
-  <ul class="user-row pull-left">
-    <li>First Name</li>
-    <li class="username">Peter</li>
-    <li>Last Name</li>
-    <li class="username">Parker</li>
-    <li>Email Address</li>
-    <li class="userinfo"><a href="#">peterparker@starkindustries.com</a></li>
-  </ul>
-
-  <ul class="user-row pull-left">
-    <li>Mobile</li>
-    <li class="userinfo">555-555-5555</li>
-    <li>Home</li>
-    <li class="userinfo">555-555-5555</li>
-     </ul>
-
+<table class="table user-table pull-left">
+  <tbody >
+    <tr>
+      <td style="border=none">First</td>
+      <td style="border=none">Last</td>
+      <td style="border=none">Work Phone</td>
+    </tr>
+    <tr>
+      <td class="username" style="border=none">Peter</td>
+      <td class="username" style="border=none">Parker</td>
+      <td class="userinfo" style="border=none">555-555-555</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="row-break"></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border=none">Email</td>
+      <td style="border=none">Home Phone</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="userinfo" style="border=none"><a href="">emailaddress@email.com</a></td>
+      <td class="userinfo">555-555-555</td>
+    </tr>
+  </tbody>
+</table>
 
 
 <div class="clearfix"></div>
+
 
 
 <!-- FAT HEADER -->
@@ -177,7 +187,7 @@
       <td>January 2, 2012</td>
       <td>Stark Industries</td>
       <td></td>
-      <td>
+      <td class="action-btn">
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
           <i class="icon-cog"></i>Actions<span class="caret"></span>
