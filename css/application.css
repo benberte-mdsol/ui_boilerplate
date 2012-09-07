@@ -331,7 +331,7 @@ span.percents {
 }
 
 td.center-buttons {
-	padding-left: 220px;
+	text-align: center !important;
 }
 td.center-buttons button{
   margin-left: 16px;
@@ -369,7 +369,7 @@ td.action-btn {
 }
 .user-img img {
   border:1px solid #999;
-  margin-bottom: 4px;
+  margin-botto: 4px;
 }
 table.user-table {
   width: 800px;
