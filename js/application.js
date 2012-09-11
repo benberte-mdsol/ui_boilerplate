@@ -11,6 +11,11 @@ window.log = function(){
 /********************** APPLICATION JAVSCRIPT BELOW THIS LINE **********************************/
 /***********************************************************************************************/
 (function($) {
-	//YOUR CODE HERE
+
+$(document).ready(function() 
+    { 
+        $("#myTable").tablesorter(); 
+    } 
+); 
 
 }(jQuery));
