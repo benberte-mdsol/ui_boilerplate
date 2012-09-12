@@ -10,11 +10,9 @@ window.log = function(){
 
 /********************** APPLICATION JAVSCRIPT BELOW THIS LINE **********************************/
 /***********************************************************************************************/
-(function($) {
-	$('#flexi').flexigrid({height:'auto',striped:true});  
+(function($) 
+	{
+		$('#flexi').flexigrid({height:'auto',striped:true});  
+	}
 
-
-	$("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
-
-
-}(jQuery));
+(jQuery));
