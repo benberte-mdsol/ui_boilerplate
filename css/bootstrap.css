@@ -3142,11 +3142,7 @@ button.close {
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
-.btn-danger:hover,
-.btn-danger:active,
-.btn-danger.active,
-.btn-danger.disabled,
-.btn-danger[disabled] {
+.btn-danger:hover,{
   color: #ffffff;
   background-color: #bd362f;
   *background-color: #a9302a;

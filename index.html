@@ -16,7 +16,8 @@
 
 <!-- STYLESHEETS HERE -->
 <link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/application.css">
+<link rel="stylesheet" href="css/application.css"></link>
+<link rel="stylesheet" href="css/tables.css"></link>
 
 <!-- NO OTHER JAVSCRIPT IN THE HEAD -->
 <script src="js/modernizr.js"></script>
@@ -88,14 +89,14 @@
     <div>
       <a href="#">Total Accepted</a>
       <h3>
-        <i class="icon-ok-sign icon-positive"></i>85 <span class="percentage">65%</span>
+        <i class="icon-ok icon-positive"></i>85 <span class="percentage">65%</span>
       </h3>
     </div>
 
     <div >
       <a href="#">Not Accepted</a>
       <h3>
-        <i class="icon-remove-sign icon-negative"></i>46</h3>
+        <i class="icon-remove icon-negative"></i>46</h3>
     </div>
 
     <div >
@@ -111,7 +112,7 @@
     <div>
       <a href="#">Passed eLearning</a>
       <h3>
-        <i class="icon-ok-sign icon-positive"></i>56 <span class="percentage">67%</span>
+        <i class="icon-ok icon-positive"></i>56 <span class="percentage">67%</span>
       </h3>
     </div>
     <div class="last">
@@ -145,7 +146,7 @@
 
 </div>
 
-<table class="table table-striped table-bordered">
+<table class="tablesorter table table-striped table-bordered" id="myTable">
   <thead>
     <tr>
       <th></th>
@@ -159,18 +160,16 @@
   </thead>
 
   <tbody>
-    <tr>
+<tr>
       <td><input type="checkbox"/></td>
       <td><a href="#">Clinical Coder</a></td>
       <td>10 </td>
       <td>4 <span class="percents">40%</span> 
-          <div class="bar-chart pull-right"> <div class="negative-bar"  style="width:40px"></div>
-          </div>
+        
       </td>
       <td>0</td>
       <td>4 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+        
       </td>
        <td class="action-btn">
         <div class="btn-group pull-right">
@@ -191,15 +190,11 @@
       <td><a href="#">CRC</a></td>
       <td>10</td>
       <td>1 <span class="percents">10%</span> 
-          <div class="bar-chart pull-right"> <div class="negative-bar" style="width: 10px"></div>
-          </div>
+          
       </td>
       <td>2</td>
       <td>1 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right">
-          <div class="positive-bar"></div> 
-          </div>
-      </td>
+          
        <td>
         <div class="btn-group pull-right">
           <button data-toggle="dropdown" class="btn dropdown-toggle">
@@ -219,13 +214,11 @@
       <td><a href="#">CRC 2</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+         
       </td>      
       <td>0</td>
       <td>5 <span class="percents">50%</span>  
-          <div class="bar-chart pull-right"> <div class="positive-bar"  style="width:50px"></div>
-          </div>
+        
       </td>
        <td>
         <div class="btn-group pull-right">
@@ -246,13 +239,11 @@
       <td><a href="#">Data Manager</a></td>
       <td>10 </td>
       <td>6 <span class="percents">60%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar" style="width: 60px"></div>
-          </div>
+          
       </td>
       <td>1</td>
       <td>1 <span class="percents">20%</span> 
-          <div class="bar-chart pull-right"> <div class="negative-bar" style="width:20px"></div>
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -272,13 +263,11 @@
       <td><a href="#">Data Manager 2</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>3</td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+         
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -298,13 +287,11 @@
       <td><a href="#">Monitor 1</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>0</td>
       <td>5 <span class="percents">50%</span> 
-          <div class="bar-chart pull-right"><div class="positive-bar" style="width:50px;"></div> 
-          </div>
+         
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -324,13 +311,11 @@
       <td><a href="#">Monitor 2</a></td>
       <td>10 </td>
       <td>5 <span class="percents">50%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar" style="width: 50px"></div>
-          </div>
+         
       </td>
       <td>0</td>
       <td>5 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -350,13 +335,11 @@
       <td><a href="#">Private Investigator 1</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>0</td>
       <td>2 <span class="percents">20%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+         
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -376,13 +359,11 @@
       <td><a href="#">Sub Private Investigator 1</a></td>
       <td>10 </td>
       <td>2 <span class="percents">20%</span> 
-          <div class="bar-chart pull-right"> <div class="negative-bar" style="width:20px"></div>
-          </div>
+         
       </td>
       <td>0</td>
       <td>2 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"><div class="positive-bar"></div> 
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -402,13 +383,11 @@
       <td><a href="#">Sub Private Investigator 2</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span>
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+        
       </td>
       <td>3</td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+         
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -428,13 +407,11 @@
       <td><a href="#">Saftey Coordinator 1</a></td>
       <td>10 </td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+         
       </td>
       <td>0</td>
       <td>10 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -454,13 +431,11 @@
       <td><a href="#">Saftey Coordinator 2</a></td>
       <td>10 </td>
       <td>6 <span class="percents">60%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar" style="width:60px;"></div>
-          </div>
+          
       </td>
       <td>0</td>
       <td>6 <span class="percents">100%</span> 
-          <div class="bar-chart pull-right"> <div class="positive-bar"></div>
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -481,13 +456,11 @@
       <td><a href="#">Saftey Coordinator 3</a></td>
       <td>10 </td>
       <td>0 <span class="percents">0%</span> 
-          <div class="bar-chart pull-right"> 
-          </div>
+        
       </td>
       <td>0</td>
       <td>0 <span class="percents">0%</span> 
-          <div class="bar-chart pull-right"> 
-          </div>
+          
       </td>
       <td>
         <div class="btn-group pull-right">
@@ -503,22 +476,18 @@
       </td>
     </tr>
 
-    <tr>
+    <tfoot>
+        <tr>
        <td  class="center-buttons" colspan="7">
-       <button data-toggle="modal" href="#myModal" class="btn btn primary"><i class="icon-plus"></i>Add Role</button>
-       <button class="btn primary"><i class="icon-envelope"></i>Resend Assignments</button>
-       <button class="btn primary"><i class="icon-share-alt"></i>Export</button>
-       <button class="btn primary"><i class="icon-remove"></i>Deactivate All Users</button> 
-     </td>
-    </tr>  
+       <button data-toggle="modal" href="#myModal" class="positive-btn"><i class="icon-plus icon-positive"></i>Add Role</button>
+       <button class="btn"><i class="icon-envelope"></i>Resend Assignments</button>
+       <button class="btn"><i class="icon-share-alt"></i>Export</button>
+       <button class="btn"><i class="icon-remove"></i>Deactivate All Users</button>
+       </td> 
+     </tr>
+    </tfoot>    
+
     </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="7">
-      Pagination
-    </td>
-    </tr>
-</tfoot>
 </table>
 </div>
 
@@ -526,17 +495,23 @@
 
 
 <footer>
+        <div class="footer-wrapper">
+          <a href="#" class="logo"><img src="images/md_logo.gif"></a>
 
-   <a href="https://www.imedidata.com/">iMedidata</a>&reg;  
-  <a href="https://www.imedidata.com/WebHelp_ENG/iMedidataPrivacyPolicy.htm" target="_blank" onClick="window.open(this.href, 'tour', 'width=820, height=600, scrollbars=yes, status=no, resizable=no, menubar=no'); return false;" onFocus="this.blur()"> Privacy Policy</a>  
-  <a href="https://www.imedidata.com/WebHelp_ENG/iMedidataTermsofUse.htm" target="_blank" onClick="window.open(this.href, 'tour', 'width=820, height=600, scrollbars=yes, status=no, resizable=no, menubar=no'); return false;" onFocus="this.blur()">Terms of Use</a><br/>
-  Copyright &copy; 2012 <a href="http://mdsol.com" target="_blank">Medidata Solutions, Inc.</a> 
-  <br>
-  Your session will expire at 08-24-2012 12:39:56 pm EDT
+          <p class="">
+            <a href="https://www.imedidata.com/">iMedidata</a>&reg;  
+            <a href="#"> Privacy Policy</a>  
+            <a href="#">Terms of Use</a><br/>
+            Copyright &copy; 2012 <a href="http://mdsol.com" target="_blank">Medidata Solutions, Inc.</a> 
+            <br>
+            Your session will expire at 08-24-2012 12:39:56 pm EDT
+        </p>
+      </div>
+</footer> 
+<div class="clearfix"></div>
 
 
-</footer>
-
+<div class="clearfix"></div>
  <ul class="presentation-nav">
    <li><a href="index.html">1</a></li>
    <li><a href="roles_filtered.html">2</a></li>
@@ -544,10 +519,7 @@
    <li><a href="all_sites.html">4</a></li>
    <li><a href="site_users.html">5</a></li>
    <li><a href="user.html">6</a></li>
-<<<<<<< HEAD
    <li><a href="visits.html">7</a></li>
-=======
->>>>>>> 9c86b35a05fe1f23276e62fdf8e95cf37b0b421d
  </ul>
 
 
@@ -593,9 +565,12 @@
 <!-- END SITE CONTENT --> 
 
 <!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 
-<script src="js/jquery.js">
-</script> 
+<script src="js/jquery.js"></script> 
 <script src="js/bootstrap.js"></script> 
+<script src="js/jquery.tablesorter.js"></script> 
 <script src="js/application.js"></script>
+<script>
+  $("#myTable").tablesorter( {sortList: [[1,0], [0,0]]} ); 
+  </script>
 </body>
 </html>
