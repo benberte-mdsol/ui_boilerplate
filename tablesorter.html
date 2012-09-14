@@ -16,124 +16,371 @@
 
 <!-- STYLESHEETS HERE -->
 
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<link rel="stylesheet" href="css/application.css"></link>
+<link rel="stylesheet" href="css/tables.css"></link>
+
+
 <!-- NO OTHER JAVSCRIPT IN THE HEAD -->
 <script src="js/modernizr.js"></script>
+
 </head>
 <body>
 <!-- SITE CONTENT -->
 
-
-<table id="myTable" class="tablesorter">
+<div class="container">
+<table class="tablesorter table table-striped table-bordered" id="myTable">
   <thead>
     <tr>
+      <th></th>
       <th>Role</th>
       <th>Sent</th>
       <th>Total Accepted</th>
       <th>Hard Bounce</th>
       <th>Passed eLearning</th>
-      <th>Passed eLearning %</th>
+      <th></th>
     </tr>
   </thead>
 
   <tbody>
-    <tr>
+<tr>
+      <td><input type="checkbox"/></td>
       <td><a href="#">Clinical Coder</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>4 <span class="percents">40%</span> 
+        
+      </td>
+      <td>0</td>
+      <td>4 <span class="percents">100%</span> 
+        
+      </td>
+       <td class="action-btn">
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
-      <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td><input type="checkbox" /></td>
+      <td><a href="#">CRC</a></td>
+      <td>10</td>
+      <td>1 <span class="percents">10%</span> 
+          
+      </td>
+      <td>2</td>
+      <td>1 <span class="percents">100%</span> 
+          
+       <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">CRC 2</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span> 
+         
+      </td>      
+      <td>0</td>
+      <td>5 <span class="percents">50%</span>  
+        
+      </td>
+       <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
+     <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Data Manager</a></td>
+      <td>10 </td>
+      <td>6 <span class="percents">60%</span> 
+          
+      </td>
+      <td>1</td>
+      <td>1 <span class="percents">20%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Data Manager 2</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span> 
+          
+      </td>
+      <td>3</td>
+      <td>10 <span class="percents">100%</span> 
+         
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Monitor 1</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span> 
+          
+      </td>
+      <td>0</td>
+      <td>5 <span class="percents">50%</span> 
+         
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Monitor 2</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>5 <span class="percents">50%</span> 
+         
+      </td>
+      <td>0</td>
+      <td>5 <span class="percents">100%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Private Investigator 1</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span> 
+          
+      </td>
+      <td>0</td>
+      <td>2 <span class="percents">20%</span> 
+         
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Sub Private Investigator 1</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>2 <span class="percents">20%</span> 
+         
+      </td>
+      <td>0</td>
+      <td>2 <span class="percents">100%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Sub Private Investigator 2</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span>
+        
+      </td>
+      <td>3</td>
+      <td>10 <span class="percents">100%</span> 
+         
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
-
     <tr>
-      <td><a href="#">Clinical Coder</a></td>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 1</a></td>
       <td>10 </td>
-      <td>4</td>
-      <td>40%</td>
-      <td>1</td>
-      <td>100%</td>
+      <td>10 <span class="percents">100%</span> 
+         
+      </td>
+      <td>0</td>
+      <td>10 <span class="percents">100%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 2</a></td>
+      <td>10 </td>
+      <td>6 <span class="percents">60%</span> 
+          
+      </td>
+      <td>0</td>
+      <td>6 <span class="percents">100%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><input type="checkbox"/></td>  
+      <td><a href="#">Saftey Coordinator 3</a></td>
+      <td>10 </td>
+      <td>0 <span class="percents">0%</span> 
+        
+      </td>
+      <td>0</td>
+      <td>0 <span class="percents">0%</span> 
+          
+      </td>
+      <td>
+        <div class="btn-group pull-right">
+          <button data-toggle="dropdown" class="btn dropdown-toggle">
+          <i class="icon-cog"></i>Actions<span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+            <li><a href="">CSV</a></li>
+            <li><a href="">Excel</a></li>
+            <li><a href="">PDF</a></li>
+            </ul>
+        </div>
+      </td>
     </tr>
 
+    <tfoot>
+        <tr>
+       <td  class="center-buttons" colspan="7">
+       <button data-toggle="modal" href="#myModal" class="btn btn primary"><i class="icon-plus"></i>Add Role</button>
+       <button class="btn primary"><i class="icon-envelope"></i>Resend Assignments</button>
+       <button class="btn primary"><i class="icon-share-alt"></i>Export</button>
+       <button class="btn primary"><i class="icon-remove"></i>Deactivate All Users</button>
+       </td> 
+     </tr>
+    </tfoot>    
 
+    </tbody>
 </table>
-
+</div>
 <!-- END SITE CONTENT --> 
 
 <!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 
 <script src="js/jquery.js"></script> 
 <script src="js/jquery.tablesorter.js"></script> 
 <script src="js/application.js"></script>
+<script>
+  $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+  </script>
 </body>
 </html>
