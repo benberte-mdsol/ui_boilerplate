@@ -408,9 +408,7 @@ background-color: #F9F9F9;
           border-top-right-radius: 0px;
   -moz-border-right-topleft: 0px;
 }
-tbody tr:hover{
-   background:#BDDEBE;
-}
+
 
 .negative {
 background-color:#ffd9d9;
@@ -434,6 +432,14 @@ td.date-small {
 }
 td.action-btn {
   width: 80px;
+}
+tr td h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding: 0 0 0 16px;
+    line-height: 20px;
 }
 .bar-chart {
 	width: 98px;
